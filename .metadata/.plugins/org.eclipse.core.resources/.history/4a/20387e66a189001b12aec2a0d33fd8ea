@@ -1,0 +1,54 @@
+package entidades;
+
+import java.util.Date;
+
+public class Post {
+	
+	private Date moment;
+	private String titulo;
+	private String conteudo;
+	private Integer like;
+	
+	public Post() {
+	}
+	
+	public Post(Date moment, String titulo, String conteudo, Integer like) {
+		this.moment = moment;
+		this.titulo = titulo;
+		this.conteudo = conteudo;
+		this.like = like;
+	}
+
+	public Date getMoment() {
+		return moment;
+	}
+
+	public void setMoment(Date moment) {
+		this.moment = moment;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getConteudo() {
+		return conteudo;
+	}
+
+	public void setConteudo(String conteudo) {
+		this.conteudo = conteudo;
+	}
+
+	public Integer getLike() {
+		return like;
+	}
+
+	public void setLike(Integer like) {
+		this.like = like;
+	}
+
+}

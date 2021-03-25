@@ -1,0 +1,39 @@
+package applcation;
+
+import java.util.*;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+
+		System.out.print("Quantas linhas e colunas terão a matriz: ");
+		int n = sc.nextInt();
+		
+		int [][] matriz = new int [n][n];
+		
+		for (int i = 0; i < n; i++) {
+			
+			for (int j = 0; j < n; j++) {
+				System.out.print("Número a ser adicionado na linha (" + (i+1) + "), coluna (" + (j+1) + "): ");
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+		
+		for (int i = 0; i < n; i++) {
+			
+			System.out.println();
+			
+			for (int j = 0; j < n; j++) {
+				System.out.print(matriz[i][j] + " ");
+			}
+		}
+		
+		for (int k = 0; k < n; k++)
+		System.out.print(matriz[k][k] + " ");
+		
+		sc.close();
+	}
+
+}

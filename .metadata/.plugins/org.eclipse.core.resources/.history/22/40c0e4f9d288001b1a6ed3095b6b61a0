@@ -1,0 +1,19 @@
+package application;
+
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		//O programa consiste em ler os dados de determinado funcionário com N contratos. Depois, solicitar do usuário um mês e mostrar qual foi o salário do funcionário neste mês.
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Insira o departamento: ");
+		String nome = sc.nextLine();
+		System.out.println(nome);
+		
+	}
+
+}

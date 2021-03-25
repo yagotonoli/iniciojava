@@ -1,0 +1,51 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entidades.*;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		List<Pessoa> lista = new ArrayList<>();
+		
+		System.out.print("Entre com a quantidade de pagadores: ");
+		int n = sc.nextInt();
+		
+		for (int i = 1; i <= n; i++) {
+			System.out.print("Pessoa Física ou Jurídica [PJ/PF]: ");
+			String t = sc.next();
+			System.out.print("Nome: ");
+			sc.nextLine();
+			String nome = sc.nextLine();
+			System.out.print("Renda anual: R$ ");
+			Double renda = sc.nextDouble();
+			if (t == "PF") {
+				System.out.print("Gastos com Saúde: R$ ");
+				double gastosSaude = sc.nextDouble();
+				Pessoa p = new PessoaFisica(nome, renda, gastosSaude);
+				lista.add(p);
+			}
+			
+			else if(t == "PJ") {
+				System.out.print("Número de funcionários: ");
+				int nFuncionarios = sc.nextInt();
+				Pessoa p = new PessoaJuridica(nome, renda, nFuncionarios);
+				lista.add(p);
+			}
+		}
+		double impostoTotal = 0;
+		System.out.println("Impostos Pagos:");
+		for (Pessoa p : lista) {
+			System.out.print(p.getNome() + " - (R$ " + p.getRenda() + ") - Imposto Total: R$ " + p.imposto());
+			impostoTotal =+ p.imposto();
+		}
+		System.out.println("\nImposto Total: " + impostoTotal);
+		sc.close();
+	}
+
+}
