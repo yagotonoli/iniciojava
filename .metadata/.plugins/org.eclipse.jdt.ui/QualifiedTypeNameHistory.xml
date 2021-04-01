@@ -32,11 +32,12 @@
     <fullyQualifiedTypeName name="entidades.ProdutoUsado"/>
     <fullyQualifiedTypeName name="entidades.ProdutoImportado"/>
     <fullyQualifiedTypeName name="entidades.Produto"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="entidades.PessoaFisica"/>
     <fullyQualifiedTypeName name="entidades.PessoaJuridica"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthSpinnerUI"/>
     <fullyQualifiedTypeName name="model.exceptions.Tratamento"/>
     <fullyQualifiedTypeName name="model.entidades.Conta"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="teste.Pessoa"/>
 </qualifiedTypeNameHistroy>
